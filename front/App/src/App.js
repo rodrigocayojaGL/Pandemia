@@ -11,7 +11,7 @@ class App extends Component {
 
   consultarApi = () => {
     const pathVar = this.state.inputRef;
-    const url = `http://localhost:9090/user/test?dni=${pathVar}`;
+    const url = `http://localhost:9090/app/user?dni=${pathVar}`;
 
     fetch(url)
       .then((response) => response.json())
