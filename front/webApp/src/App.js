@@ -1,40 +1,49 @@
-import React from 'react';
-import logo from './assests/images/logo.svg';
-import './assests/css/App.css';
+import React, { Component } from "react";
+import "./assests/css/App.css";
+import Buscador from "./components/Buscador";
+import Resultado from "./components/Resultado";
 
-//Importar componentes
-import MyCoponent from "./components/MyComponent";
+class App extends Component {
+  state = {
+    inputRef: "",
+    destino: [],
+  };
 
-function HolaMundo (type, ide) {
-  var presentacionFunction = (
-  <div>
-    <h3>Function {type}</h3>
-    <h3>by {ide}</h3>
-  </div>);
-  return presentacionFunction;
-}
-function App() {
-  //variables
-  var ide = "visual studio"
-  var type = "de frontEnd"
-  var nombre = "Rodrigo Choque"
-  var presentacion = <h2>Hola, soy {nombre}</h2>
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {presentacion}
-        {HolaMundo(type,ide)}
-        {alert("Bienvenido")}
-        <p>
-          <code>REACT</code>
-        </p>
-      </header>
-      <section className="component">
-        <MyCoponent/>
-      </section>
-    </div>
-  );
+  consultarApi = () => {
+    const pathVar = this.state.inputRef;
+    const url = `http://localhost:9090/user/test?dni=${pathVar}`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((result) => this.setState({ destino: result.user }));
+
+    console.log("URI APP " + url);
+    console.log("resul " + this.state.destino);
+  };
+
+  datosBusqueda = (inputRef) => {
+    this.setState(
+      {
+        inputRef,
+      },
+      () => {
+        this.consultarApi();
+      }
+    );
+  };
+  render() {
+    return (
+      <div className="app container">
+        <div className="jumbotron">
+          <p className="lead text-center" id="title">
+            Buscar destinos
+          </p>
+          <Buscador propMsg={this.datosBusqueda} />
+        </div>
+        <Resultado destinos={this.state.destino} />
+      </div>
+    );
+  }
 }
 
 export default App;

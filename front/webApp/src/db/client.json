@@ -1,0 +1,23 @@
+[
+    {
+    "id":0,
+    "name": "Rodrigo",
+    "lastName":"Choque",
+    "edad": 24,
+    "mod": true 
+    },
+    {
+    "id":1,
+    "name": "Leonel",
+    "lastName":"Choque",
+    "edad": 16,
+    "mod": true 
+    },
+    {
+    "id":2,
+    "name": "Thiago",
+    "lastName":"Choque",
+    "edad": 8,
+    "mod": true 
+    }
+]
