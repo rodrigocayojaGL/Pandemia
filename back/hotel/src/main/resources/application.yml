@@ -1,0 +1,13 @@
+server:
+  port: 8091
+  
+spring:
+  datasource:
+    password: Pandemia2020!
+    username: pandemia
+    url: jdbc:mysql://pandemia.ch7amcttpe1m.us-east-1.rds.amazonaws.com:3306/pandemia
+    
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
