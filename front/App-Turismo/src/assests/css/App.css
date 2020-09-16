@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.myImage {
+  width: 1130px;
+  height: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+}
+.myImagePaisaje {
+  width: 700px;
+  height: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+}
+
+.nav-link {
+  width: 212px;
+  height: 80px;
+  align-content: center;
+  background-color: aquamarine;
+  border-radius: 15px;
+  font-size: calc(18px + 1vmin);
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-top: 18px;
+  background-color: aquamarine;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+.nav {
+  align-content: center;
+  margin-top: 5px;
+  background-color: aquamarine;
+  border-radius: 15px;
+  tab-size: 100px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.subHeader {
+  margin-top: 100px;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.margin {
+  margin-top: 50px;
+}
+
+.active {
+  border-bottom: 1px solid blue;
+}
+
+.header {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 140%;
+}
