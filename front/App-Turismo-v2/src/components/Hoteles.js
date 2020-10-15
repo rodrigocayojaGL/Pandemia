@@ -37,19 +37,3 @@ export default class Hoteles extends Component {
     );
   }
 }
-
-/*
-<Route
-exact
-path="/Ciudad/:ciudad"
-render={(props) => {
-  var id = props.match.params.ciudad;
-
-  return (
-    <div id="content">
-      <h1>{id}</h1>
-    </div>
-  );
-}}
-/>
-*/

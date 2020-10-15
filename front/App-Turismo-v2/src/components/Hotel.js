@@ -1,14 +1,11 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export default class Hotel extends Component {
   state = {
     hoteles: [],
-    contador: 0,
   };
 
-  aumentar() {
-    this.setState({ contador: this.state.contador + 1 });
-  }
   componentDidMount() {
     const pathHotel =
       `http://localhost:8091/hotel/` + this.props.match.params.hotel;
@@ -28,34 +25,20 @@ export default class Hotel extends Component {
       <div id="Hotel">
         {hoteles.map((i) => (
           <div key={i.idHotel} className="galleryHotel">
-            <h2 className="subrayado">Hotel</h2>
-            <dl className="margin20">
-              <dt className="margin20">Nombre:</dt>
-              <dd>{i.nombre}</dd>
-              <dt className="margin20">Calidad:</dt>
-              <dd>{i.calidad}</dd>
-              <dt className="margin20">Precio:</dt>
-              <dd>$ {i.precio}</dd>
-            </dl>
+            <NavLink to={`/transporte/${i.idHotel}/${i.idCiudad}`}>
+              <h2 className="subrayado">Hotel</h2>
+              <dl className="margin20">
+                <dt className="margin20">Nombre:</dt>
+                <dd>{i.nombre}</dd>
+                <dt className="margin20">Calidad:</dt>
+                <dd>{i.calidad}</dd>
+                <dt className="margin20">Precio:</dt>
+                <dd>$ {i.precio}</dd>
+              </dl>
+            </NavLink>
           </div>
         ))}
       </div>
     );
   }
 }
-
-/*
-<Route
-exact
-path="/Ciudad/:ciudad"
-render={(props) => {
-  var id = props.match.params.ciudad;
-
-  return (
-    <div id="content">
-      <h1>{id}</h1>
-    </div>
-  );
-}}
-/>
-*/

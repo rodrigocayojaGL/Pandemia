@@ -128,3 +128,44 @@ div.galleryHotel {
   font-size: 199%;
   text-decoration: underline;
 }
+
+/*Reserva*/
+.margin50 {
+  margin-top: 70px;
+  border: 1px solid #ccc;
+  background-color: aquamarine;
+  float: left;
+  width: 500px;
+  margin-left: 400px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.busqueda {
+  margin-top: 100px;
+  border: 1px solid #ccc;
+  background-color: aquamarine;
+  float: left;
+  width: 600px;
+  height: 80px;
+  margin-left: 600px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 140%;
+}
+.busquedaInfo {
+  margin-top: 100px;
+  border: 1px solid #ccc;
+  background-color: aquamarine;
+  float: left;
+  width: 600px;
+  height: 300px;
+  margin-left: 600px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 140%;
+}
+.left50 {
+  margin-left: 30px;
+}

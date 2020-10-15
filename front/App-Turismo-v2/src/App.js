@@ -6,6 +6,7 @@ import Router from "./components/Router";
 
 class App extends Component {
   render() {
+    console.log("ENVIADO PROP" + this.props.children);
     return (
       <div className="App">
         <Router />
