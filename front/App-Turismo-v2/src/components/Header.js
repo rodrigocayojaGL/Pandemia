@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Paisaje from "../assests/images/Paisaje.png";
+import Paisaje from "../assests/images/fondo.png";
 import { NavLink } from "react-router-dom";
 export default class Header extends Component {
   render() {

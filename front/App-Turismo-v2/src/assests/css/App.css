@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+body {
+  background-image: url("../images/fonda.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .myImage {
   width: 1350px;
   height: 200px;
@@ -24,7 +29,7 @@
   width: 260px;
   height: 90px;
   align-content: center;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 159, 0.767);
   border-radius: 15px;
   font-size: calc(27px + 1vmin);
   font-weight: bold;
@@ -32,7 +37,7 @@
 
 .nav-item {
   margin-top: 18px;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 138, 0.767);
   margin-left: 50px;
   border-radius: 15px;
 }
@@ -40,7 +45,7 @@
 .nav {
   align-content: center;
   margin-top: 25px;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 138, 0.767);
   border-radius: 15px;
   tab-size: 100px;
   margin-left: -120px;
@@ -55,6 +60,16 @@
   width: 100%;
   background-color: black;
   color: white;
+  text-align: center;
+}
+
+.redes {
+  width: 40px;
+  height: 40px;
+}
+
+.redesPosicion {
+  margin-right: 50px;
   text-align: center;
 }
 
@@ -83,11 +98,13 @@
 
 /*Ciudad*/
 div.gallery {
+  background-color: rgb(127, 246, 255);
+  margin-block-end: 100px;
   margin-top: 70px;
   border: 1px solid #ccc;
   float: left;
   width: 300px;
-  margin-left: 180px;
+  margin-left: 150px;
   border-radius: 10px;
 }
 
@@ -110,6 +127,7 @@ div.gallery img {
 
 /*Hotel*/
 div.galleryHotel {
+  margin-block-end: 110px;
   margin-top: 70px;
   border: 1px solid #ccc;
   background-color: lightblue;
@@ -133,7 +151,7 @@ div.galleryHotel {
 .margin50 {
   margin-top: 70px;
   border: 1px solid #ccc;
-  background-color: aquamarine;
+  background-color: rgb(127, 246, 255);
   float: left;
   width: 500px;
   margin-left: 400px;
@@ -143,25 +161,26 @@ div.galleryHotel {
 }
 
 .busqueda {
-  margin-top: 100px;
+  margin-top: 50px;
   border: 1px solid #ccc;
-  background-color: aquamarine;
+  background-color: rgb(127, 246, 255);
   float: left;
   width: 600px;
   height: 80px;
-  margin-left: 600px;
+  margin-left: 450px;
   border-radius: 10px;
   font-weight: bold;
   font-size: 140%;
 }
 .busquedaInfo {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-block-end: 200px;
   border: 1px solid #ccc;
-  background-color: aquamarine;
+  background-color: rgb(127, 246, 255);
   float: left;
   width: 600px;
   height: 300px;
-  margin-left: 600px;
+  margin-left: 450px;
   border-radius: 10px;
   font-weight: bold;
   font-size: 140%;

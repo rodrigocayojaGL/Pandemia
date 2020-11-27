@@ -9,7 +9,7 @@ class App extends Component {
     console.log("ENVIADO PROP" + this.props.children);
     return (
       <div className="App">
-        <Router />
+        <Router/>
       </div>
     );
   }
